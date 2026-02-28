@@ -8,6 +8,15 @@ def SUB(x, y):
     resultado = float(x) - float(y)
     print(f"O resultado da subtração de {x} - {y} é : {resultado}")
 
+def MULT(x, y):
+    resultado = float(x) * float(y)
+    print(f"O resultado da multiplicação de {x} * {y} é : {resultado}")
+
+def DIV(x, y):
+    resultado = float(x) / float(y)
+    print(f"O resultado da divisão de {x} / {y} é : {resultado}")
+
+
 
 while True:
     print("=================================")
@@ -26,20 +35,40 @@ while True:
     print("Para SAIR digite [ 0 ]")
     print("=================================")
 
+
+
     escolha = input("Qual operação deseja realizar? ")
 
     print("=================================")
 
+
+
     if escolha == "0":
         print("Saindo...")
         break
+
     elif escolha == "1":
         x = (input("Digite o Primeiro Número: "))
         y = (input("Digite o Segundo Número: "))
         SOMA(x, y)
+
     elif escolha == "2":
         x = (input("Digite o Primeiro Número: "))
         y = (input("Digite o Segundo Número: "))
         SUB(x, y)
+
+    elif escolha == "3":
+        x = (input("Digite o Primeiro Número: "))
+        y = (input("Digite o Segundo Número: "))
+        MULT(x, y)
+
+    elif escolha == "4":
+        x = (input("Digite o Primeiro Número: "))
+        y = (input("Digite o Segundo Número: "))
+        DIV(x, y)
+    
+
+
+
 
     print("=================================")
