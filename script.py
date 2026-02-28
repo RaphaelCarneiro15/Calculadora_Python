@@ -16,6 +16,9 @@ def DIV(x, y):
     resultado = float(x) / float(y)
     print(f"O resultado da divisão de {x} / {y} é : {resultado}")
 
+def POT(x, y):
+    resultado = math.pow(x, y)
+    print(f"O resultado da potência de {x} elevado à {y} é: {resultado}")
 
 
 while True:
@@ -67,6 +70,10 @@ while True:
         y = (input("Digite o Segundo Número: "))
         DIV(x, y)
     
+    elif escolha == "5":
+        x = int((input("Digite o Primeiro Número: ")))
+        y = int((input("Digite o Segundo Número (potência): ")))
+        POT(x, y)
 
 
 
