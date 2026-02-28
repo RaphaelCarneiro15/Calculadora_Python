@@ -1,8 +1,12 @@
 import math
 
 def SOMA(x, y):
-        resultado = float(x) + float(y)
-        print(f"O resultado da soma de {x} + {y} é : {resultado}")
+    resultado = float(x) + float(y)
+    print(f"O resultado da soma de {x} + {y} é : {resultado}")
+
+def SUB(x, y):
+    resultado = float(x) - float(y)
+    print(f"O resultado da subtração de {x} - {y} é : {resultado}")
 
 
 while True:
@@ -22,7 +26,7 @@ while True:
     print("Para SAIR digite [ 0 ]")
     print("=================================")
 
-    escolha = input("Qual operação deseja realizar?")
+    escolha = input("Qual operação deseja realizar? ")
 
     print("=================================")
 
@@ -33,5 +37,9 @@ while True:
         x = (input("Digite o Primeiro Número: "))
         y = (input("Digite o Segundo Número: "))
         SOMA(x, y)
+    elif escolha == "2":
+        x = (input("Digite o Primeiro Número: "))
+        y = (input("Digite o Segundo Número: "))
+        SUB(x, y)
 
     print("=================================")
