@@ -20,6 +20,15 @@ def POT(x, y):
     resultado = math.pow(x, y)
     print(f"O resultado da potência de {x} elevado à {y} é: {resultado}")
 
+def RAIZ(x):
+    resultado = math.sqrt(x)
+    print(f"O resultado da raiz quadrada de {x} é: {resultado}")
+
+def FAT(x):
+    resultado = math.factorial(x)
+    print(f"O fatorial de {x}! é: {resultado}")
+
+
 
 while True:
     print("=================================")
@@ -75,7 +84,13 @@ while True:
         y = int((input("Digite o Segundo Número (potência): ")))
         POT(x, y)
 
-
-
+    elif escolha == "6":
+        x = int((input("Digite o número: ")))
+        RAIZ(x)
+    
+    elif escolha == "7":
+        x = int((input("Digite o número: ")))
+        FAT(x)
+        
 
     print("=================================")
