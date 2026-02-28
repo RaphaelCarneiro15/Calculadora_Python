@@ -28,6 +28,18 @@ def FAT(x):
     resultado = math.factorial(x)
     print(f"O fatorial de {x}! é: {resultado}")
 
+def SEN(x):
+    resultado = math.sin(x)
+    print(f"O seno de {x} é: {resultado}")
+
+def COS(x):
+    resultado = math.cos(x)
+    print(f"O resultado do cosseno de {x} é: {resultado}")
+
+def TAN(x):
+    resultado = math.tan(x)
+    print(f"O resultado da tangende de {x} é: {resultado}")
+
 
 
 while True:
@@ -92,5 +104,19 @@ while True:
         x = int((input("Digite o número: ")))
         FAT(x)
         
-
+    elif escolha == "8":
+        x = int((input("Digite o número: ")))
+        SEN(x)
+    
+    elif escolha == "9":
+        x = int((input("Digite o número: ")))
+        COS(x)
+    
+    elif escolha == "10":
+        x = int((input("Digite o número: ")))
+        TAN(x)
+   
+    else:
+        print("Escolha um número da lista por favor...")
+    
     print("=================================")
