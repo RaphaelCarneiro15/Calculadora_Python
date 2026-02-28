@@ -9,12 +9,15 @@ def SUB(x, y):
     print(f"O resultado da subtração de {x} - {y} é : {resultado}")
 
 def MULT(x, y):
-    resultado = float(x) * float(y)
-    print(f"O resultado da multiplicação de {x} * {y} é : {resultado}")
+        resultado = float(x) * float(y)
+        print(f"O resultado da multiplicação de {x} * {y} é : {resultado}")
 
 def DIV(x, y):
-    resultado = float(x) / float(y)
-    print(f"O resultado da divisão de {x} / {y} é : {resultado}")
+    if float(y) == 0:
+        print("ERROR! Não é possivel dividir um número por 0!")
+    else:
+        resultado = float(x) / float(y)
+        print(f"O resultado da divisão de {x} / {y} é : {resultado}")
 
 def POT(x, y):
     resultado = math.pow(x, y)
@@ -29,15 +32,15 @@ def FAT(x):
     print(f"O fatorial de {x}! é: {resultado}")
 
 def SEN(x):
-    resultado = math.sin(x)
+    resultado = math.sin(math.radians(float(x)))
     print(f"O seno de {x} é: {resultado}")
 
 def COS(x):
-    resultado = math.cos(x)
+    resultado = math.cos(math.radians(float(x)))
     print(f"O resultado do cosseno de {x} é: {resultado}")
 
 def TAN(x):
-    resultado = math.tan(x)
+    resultado = math.tan(math.radians(float(x)))
     print(f"O resultado da tangende de {x} é: {resultado}")
 
 
